@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f7f7f7</color>
+    <color name="colorPrimaryDark">#e4e4e4</color>
+    <color name="colorAccent">#454545</color>
+    <color name="color_background_material_light">#cacaca</color>
+    <color name="text_color_primary">#505050</color>
+    <color name="text_color_secondary">#ffffff</color>
+
+    <color name="colorCameraControlBoard">#79303030</color>
+
+    <color name="colorFAB">#a1494848</color>
+
+    <color name="ic_launcher_background">#F28F00</color>
+</resources>

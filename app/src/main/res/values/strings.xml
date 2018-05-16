@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Камера</string>
+
+    <!--dialogs-->
+    <string name="dialog_message_delete">Удалить выбранный файл?</string>
+    <string name="nothing_found">Ничего не найдено :(</string>
+    <string name="could_not_set_up_detector">Не удалось установить детектор</string>
+    <string name="cancel">ОТМЕНА</string>
+    <string name="yes">ОК</string>
+    <string name="go_to_site">ПЕРЕЙТИ</string>
+
+    <!--permissions-->
+    <string name="permission_camera_denied">Вы не предоставили разрешения, приложение будет закрыто</string>
+
+    <!--toolbar-->
+    <string name="gallery_toolbar_title">Галерея</string>
+    <string name="face_detector_toolbar_title">Детектор лиц</string>
+    <string name="action_share">Поделиться</string>
+    <string name="action_delete">Удалить</string>
+
+    <string name="photo_placeholder">photoPlaceholder</string>
+    <string name="take_photo">Сделать фото</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="kuzhelko.dmitry.mycamera">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera2.full"/>
+
+    <application
+        android:name=".CameraApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="face"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="5541faaace42568fcaa11db04bba00e63a9b3fc8"/>
+
+        <activity
+            android:name=".ui.camera.view.CameraActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.media.action.IMAGE_CAPTURE"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.gallery.view.GalleryActivity"
+            android:parentActivityName=".ui.camera.view.CameraActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.faceDetector.view.FaceDetectorActivity"
+            android:parentActivityName=".ui.gallery.view.GalleryActivity">
+        </activity>
+    </application>
+</manifest>
