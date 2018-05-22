@@ -45,7 +45,6 @@ class GalleryActivity : BaseActivity(), GalleryView, DeleteDialog.DeleteDialogLi
     private var rotateBackward: Animation? = null
 
     private var isFabOpen: Boolean = false
-    private var isWidgetsVisible: Boolean = false
 
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
